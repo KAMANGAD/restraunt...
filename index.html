@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Haven | Fine Dining Experience</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Gourmet<span>Haven</span></a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#reservation">Reservations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Exquisite Dining Experience</h1>
+            <p>Discover the art of fine dining with our seasonal menu crafted by award-winning chefs</p>
+            <a href="#reservation" class="btn">Book a Table</a>
+        </div>
+    </section>
+
+    <!-- Featured Dishes -->
+    <section class="featured">
+        <div class="container">
+            <h2 class="section-title">Today's Specials</h2>
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Dish 1">
+                    <h3>Truffle Risotto</h3>
+                    <p>Creamy Arborio rice with wild mushrooms and black truffle</p>
+                    <span class="price">K9,000</span>
+                </div>
+                <div class="dish-card">
+                    <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Dish 2">
+                    <h3>Grilled Salmon</h3>
+                    <p>Fresh Atlantic salmon with lemon butter sauce and seasonal vegetables</p>
+                    <span class="price">K20,000</span>
+                </div>
+                <div class="dish-card">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Dish 3">
+                    <h3>Beef Wellington</h3>
+                    <p>Premium beef tenderloin wrapped in puff pastry with mushroom duxelles</p>
+                    <span class="price">K33,000</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="starters">Starters</button>
+                <button class="tab-btn" data-category="mains">Main Courses</button>
+                <button class="tab-btn" data-category="desserts">Desserts</button>
+                <button class="tab-btn" data-category="drinks">Drinks</button>
+            </div>
+            <div class="menu-items">
+                <!-- Starters -->
+                <div class="menu-category active" id="starters">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Nsima </h3>
+                            <p>Nsima with flied chambo,tomatoes, garlic, and fresh basil</p>
+                        </div>
+                        <span class="item-price">k12,000</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Calamari</h3>
+                            <p>Crispy fried squid with lemon aioli</p>
+                        </div>
+                        <span class="item-price">k18,000</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Caprese Salad</h3>
+                            <p>Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze</p>
+                        </div>
+                        <span class="item-price">k11,987</span>
+                    </div>
+                </div>
+                
+                <!-- Mains -->
+                <div class="menu-category" id="mains">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Filet Mignon</h3>
+                            <p>8oz grass-fed beef with roasted potatoes and seasonal vegetables</p>
+                        </div>
+                        <span class="item-price">k18,900</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Lobster Pasta</h3>
+                            <p>Fresh lobster with handmade pasta in a creamy garlic sauce</p>
+                        </div>
+                        <span class="item-price">k15,000</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Vegetable Risotto</h3>
+                            <p>Creamy risotto with seasonal vegetables and parmesan</p>
+                        </div>
+                        <span class="item-price">k13,000</span>
+                    </div>
+                </div>
+                
+                <!-- Desserts -->
+                <div class="menu-category" id="desserts">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Chocolate Soufflé</h3>
+                            <p>Warm chocolate soufflé with vanilla ice cream</p>
+                        </div>
+                        <span class="item-price">k20,000</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Crème Brûlée</h3>
+                            <p>Classic vanilla custard with caramelized sugar topping</p>
+                        </div>
+                        <span class="item-price">k10,000</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Tiramisu</h3>
+                            <p>Layers of coffee-soaked ladyfingers and mascarpone cream</p>
+                        </div>
+                        <span class="item-price">$11,000</span>
+                    </div>
+                </div>
+                
+                <!-- Drinks -->
+                <div class="menu-category" id="drinks">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>House Wine</h3>
+                            <p>Glass of our signature red or white wine</p>
+                        </div>
+                        <span class="item-price">k13,000</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Craft Cocktails</h3>
+                            <p>Ask your server about our seasonal cocktail selections</p>
+                        </div>
+                        <span class="item-price">k6,000</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Sparkling Water</h3>
+                            <p>Imported Italian sparkling water</p>
+                        </div>
+                        <span class="item-price">k4,700</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Our Story</h2>
+                    <p>Founded in 2010, Gourmet Haven began as a small bistro with a passion for exceptional food. Over the years, we've grown into an award-winning restaurant known for our innovative cuisine and warm hospitality.</p>
+                    <p>Our chefs source only the finest local and seasonal ingredients to create dishes that celebrate both tradition and creativity. Every meal at Gourmet Haven is crafted with care and attention to detail.</p>
+                    <a href="#reservation" class="btn">Join Us for Dinner</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Restaurant Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation-section">
+        <div class="container">
+            <h2 class="section-title">Make a Reservation</h2>
+            <form id="booking-form" class="reservation-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="number" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time</label>
+                    <select id="time" name="time" required>
+                        <option value="">Select a time</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="12:00">12:00 PM</option>
+                        <option value="13:00">1:00 PM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="17:00">5:00 PM</option>
+                        <option value="18:00">6:00 PM</option>
+                        <option value="19:00">7:00 PM</option>
+                        <option value="20:00">8:00 PM</option>
+                        <option value="21:00">9:00 PM</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <select id="guests" name="guests" required>
+                        <option value="1">1 person</option>
+                        <option value="2">2 people</option>
+                        <option value="3">3 people</option>
+                        <option value="4">4 people</option>
+                        <option value="5">5 people</option>
+                        <option value="6">6 people</option>
+                        <option value="7">7 people</option>
+                        <option value="8">8 people</option>
+                        <option value="9">9+ people</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="special-requests">Special Requests</label>
+                    <textarea id="special-requests" name="special-requests" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn">Book Table</button>
+            </form>
+            <div id="booking-success" class="booking-success hidden">
+                <i class="fas fa-check-circle"></i>
+                <h3>Reservation Confirmed!</h3>
+                <p>Thank you for booking with us. We've sent a confirmation to your email.</p>
+                <button id="new-booking" class="btn">Make Another Reservation</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Guests Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The food was absolutely incredible! Every dish was a work of art, both visually and in taste. The service was impeccable."</p>
+                    <div class="guest-info">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Guest 1">
+                        <span>- Sarah Johnson</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"One of the best dining experiences I've ever had. The atmosphere was perfect, and the wine pairing suggestions were spot on."</p>
+                    <div class="guest-info">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Guest 2">
+                        <span>- Michael Chen</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"Celebrated our anniversary here and it was magical. The staff went above and beyond to make our evening special."</p>
+                    <div class="guest-info">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Guest 3">
+                        <span>- Emily Rodriguez</span>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button id="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Contact Us</h2>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Gourmet Street, Foodie City, FC 12345</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>(123) 456-7890</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>reservations@gourmethaven.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Monday - Saturday: 11:00 AM - 10:00 PM<br>Sunday: 10:00 AM - 8:00 PM</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Daniel Kamanga" target= "_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@user29667536086625" target="_blank"><i class="fab fa-tiktok"></i></a>
+                         <a href="https://wa.me/265996284470" target="_blank"><i class="fab fa-whatsApp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215256018072!2d-73.987844924164!3d40.74844097138957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Gourmet Haven</h3>
+                    <p>Exquisite dining experiences crafted with passion and the finest ingredients.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#reservation">Reservations</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive updates and special offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Gourmet Haven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
